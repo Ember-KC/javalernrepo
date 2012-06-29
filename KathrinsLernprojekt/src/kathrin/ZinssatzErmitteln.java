@@ -8,10 +8,10 @@ public class ZinssatzErmitteln {
 	public static void main(String[] args) {
 		double dollars = 1000.00;
 		double zinssatz = 0.01;
-		int LAUFZEIT = 50;
+		int LAUFZEIT = 40;
 
 		zinssatz = berechneZinssatz(dollars, LAUFZEIT, zinssatz);
-		System.out.println("Nach 50 Jahren bei einem Zinssatz von " + zinssatz
+		System.out.println("Nach 40 Jahren bei einem Zinssatz von " + zinssatz
 				* 100 + "Prozent sind Sie Millionär!");
 	}
 
