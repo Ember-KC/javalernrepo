@@ -12,7 +12,7 @@ public class Bowling {
 		int ergebnisWurf1 = 0;
 		int ergebnisWurf2 = 0;
 		int rundenpunkte = 0;
-		int runde = 0;
+
 		int j = 0;
 
 		int wurf1[] = new int[10];
@@ -20,8 +20,8 @@ public class Bowling {
 		int punkteRunde[] = new int[10];
 		String strikeSpare[] = new String[10];
 
-		while (runde < 10) {
-			System.out.println("Runde " + runde);
+		for (int runde = 0; runde < 10; runde++) {
+			System.out.println("Runde " + (runde + 1));
 			// erster Wurf
 			Random rand = new Random();
 			ergebnisWurf1 = rand.nextInt(10) + 1;
@@ -29,6 +29,7 @@ public class Bowling {
 
 			if (ergebnisWurf1 == 10) {
 				strikeSpare[runde] = "Strike";
+				System.out.println("Strike!");
 			}
 
 			else {
@@ -40,6 +41,7 @@ public class Bowling {
 				// war
 				if (ergebnisWurf1 + ergebnisWurf2 == 10) {
 					strikeSpare[runde] = "Spare";
+					System.out.println("Spare!");
 				}
 			}
 			rundenpunkte = ergebnisWurf1 + ergebnisWurf2;
@@ -54,13 +56,13 @@ public class Bowling {
 			// addieren
 
 			punkteRunde[runde] = rundenpunkte;
-			System.out.println("Ergebnis der Runde " + runde + ": "
+			System.out.println("Ergebnis der Runde " + (runde + 1) + ": "
 					+ rundenpunkte);
 			// Runde hochzählen
-			runde = runde + 1;
+
 		}
-		while (j <= 10) {
-			gesamtpunkte = gesamtpunkte + punkteRunde[runde];
+		while (j < 10) {
+			gesamtpunkte = gesamtpunkte + punkteRunde[j];
 			j++;
 
 		}
