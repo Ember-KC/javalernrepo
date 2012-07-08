@@ -10,14 +10,17 @@ public class Zufallszahlen {
 		Scanner scan = new Scanner(System.in);
 		Random rand = new Random();
 
-		while (true) {
+		boolean run = true;
+
+		while (run) {
 			System.out.print("Ihr Wurf ist eine " + (rand.nextInt(6) + 1));
 			String zeile = scan.nextLine();
 			if (zeile.equalsIgnoreCase("q")) {
 				System.out.println("Tschüss, bis Morgen!");
-				break;
-
+				run = false;
 			}
 		}
+
+		scan.close();
 	}
 }
