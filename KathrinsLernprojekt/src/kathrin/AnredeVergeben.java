@@ -9,15 +9,24 @@ public class AnredeVergeben {
 	 */
 	public static void main(String[] args) {
 
-		System.out.println("Bitte geben Sie Ihren Namen ein.");
-		Scanner scan = new Scanner(System.in);
-		String name = scan.nextLine();
+		String name = "test";
 
-		if (name.startsWith("Amy") || name.startsWith("Buffy")
-				|| name.startsWith("Cathy")) {
-			System.out.println("Mrs. " + name);
-		} else {
-			System.out.println("Mr. " + name);
+		while (!name.equals("")) {
+			System.out.println("Bitte geben Sie Ihren Namen ein.");
+			Scanner scan = new Scanner(System.in);
+			name = scan.nextLine();
+
+			if (name.startsWith("Amy") || name.startsWith("Buffy")
+					|| name.startsWith("Cathy")) {
+				System.out.println("Mrs. " + name);
+			} else if (name.startsWith("Elroy") || name.startsWith("Fred")
+					|| name.startsWith("Graham")) {
+				System.out.println("Mr. " + name);
+			} else {
+				System.out.println(name);
+
+			}
+
 		}
 	}
 }
