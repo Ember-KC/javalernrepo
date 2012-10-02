@@ -26,6 +26,7 @@ public class AnredeVergeben {
 				System.out.println(name);
 
 			}
+			scan.close();
 
 		}
 	}
