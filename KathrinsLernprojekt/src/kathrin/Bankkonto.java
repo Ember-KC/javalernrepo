@@ -1,5 +1,7 @@
 package kathrin;
 
+import java.util.Scanner;
+
 class Bankkonto {
 
 	String kontoinhaber;
@@ -41,8 +43,18 @@ class Bankkonto {
 	}
 
 	double getKontostand() {
+
 		return kontostand;
 
+	}
+
+	double getBetrag() {
+		double betrag = 0.00;
+
+		Scanner scanBetrag = new Scanner(System.in);
+		betrag = scanBetrag.nextDouble();
+		scanBetrag.close();
+		return betrag;
 	}
 
 	private Bankkonto() {

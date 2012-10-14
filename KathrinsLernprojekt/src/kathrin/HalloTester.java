@@ -4,10 +4,26 @@ import java.util.Scanner;
 
 class HalloObjekt {
 
+	private boolean uppercase;
+
+	HalloObjekt() {
+		this(true);
+
+	}
+
+	HalloObjekt(boolean uppercase) {
+		this.uppercase = uppercase;
+	}
+
 	void sprich(String mitteilung, int length) {
 		int i = 0;
 		while (i < length) {
-			System.out.println(mitteilung);
+			if (uppercase) {
+				System.out.println(mitteilung.toUpperCase());
+
+			} else {
+				System.out.println(mitteilung);
+			}
 			i = i + 1;
 		}
 	}
