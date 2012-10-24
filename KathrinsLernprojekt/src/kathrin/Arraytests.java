@@ -16,6 +16,6 @@ public class Arraytests {
 		System.out.println("Es wurden insgesamt " + overhoursTotal
 				+ " Überstunden gemacht.");
 		System.out.println(overhours[2]);
-
+		System.out.println("Hab DIch lieb! <3 :-*");
 	}
 }
