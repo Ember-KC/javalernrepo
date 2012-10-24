@@ -9,7 +9,7 @@ public class SamsDeli {
 	 */
 	public static void main(String[] args) {
 		String nameArtikel, expressOption;
-		double preisArtikel = 0.0, versandKosten = 0.0,  gesamtKosten = 0.0;
+		double preisArtikel = 0.0, versandKosten = 0.0, gesamtKosten = 0.0;
 		final double REDVERSAND = 2.00, VOLLVERSAND = 3.00, EXPRESS = 5.00;
 
 		Scanner scan = new Scanner(System.in);

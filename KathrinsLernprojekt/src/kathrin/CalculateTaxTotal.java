@@ -1,6 +1,7 @@
 package kathrin;
-import java.util.Scanner;
+
 import java.text.DecimalFormat;
+import java.util.Scanner;
 
 public class CalculateTaxTotal {
 
@@ -26,12 +27,12 @@ public class CalculateTaxTotal {
 
 		double grossAmount = netAmount + taxAmount;
 
-		DecimalFormat taxFormat = new DecimalFormat( "0.00" );
-		String taxString = taxFormat.format( taxAmount );
-		
-		DecimalFormat grossFormat = new DecimalFormat( "0.00" );
-		String grossString = grossFormat.format( grossAmount );
-		
+		DecimalFormat taxFormat = new DecimalFormat("0.00");
+		String taxString = taxFormat.format(taxAmount);
+
+		DecimalFormat grossFormat = new DecimalFormat("0.00");
+		String grossString = grossFormat.format(grossAmount);
+
 		System.out.println("Die Steuer beträgt " + taxString + " Dollar.");
 		System.out.println("Der Gesamtpreis ist " + grossString + " Dollar.");
 

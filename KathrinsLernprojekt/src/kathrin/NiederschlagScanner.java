@@ -1,4 +1,5 @@
 package kathrin;
+
 import java.util.Scanner;
 
 public class NiederschlagScanner {

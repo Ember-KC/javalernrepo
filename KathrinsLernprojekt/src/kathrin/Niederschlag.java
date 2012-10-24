@@ -1,4 +1,5 @@
 package kathrin;
+
 public class Niederschlag {
 	public static void main(String[] args) {
 

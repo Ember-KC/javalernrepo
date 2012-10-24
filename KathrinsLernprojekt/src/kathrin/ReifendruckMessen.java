@@ -55,10 +55,10 @@ public class ReifendruckMessen {
 	public static boolean reifendruckVergleichen(int druckHintenLinks,
 			int druckHintenRechts, int druckVorneLinks, int druckVorneRechts,
 			boolean druckOk) {
-		
+
 		int abweichungHinten = druckHintenLinks - druckHintenRechts;
 		int abweichungVorne = druckVorneLinks - druckVorneRechts;
-		
+
 		if (abweichungHinten <= 3 && abweichungHinten >= -3
 				&& abweichungVorne <= 3 && abweichungVorne >= -3
 				&& druckOk == true) {

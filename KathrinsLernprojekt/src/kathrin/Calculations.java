@@ -1,6 +1,8 @@
 package kathrin;
-import java.util.Scanner;
+
 import static java.lang.Math.PI;
+
+import java.util.Scanner;
 
 public class Calculations {
 

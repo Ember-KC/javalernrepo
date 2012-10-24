@@ -27,15 +27,15 @@ public class MeilenGallone {
 
 			System.out.println("Endstand Meilen:");
 			endmeilen = scan.nextDouble();
-			
+
 			// Gallonen eingeben
-			
+
 			System.out.println("Gallonen:");
 			gallonen = scan.nextDouble();
-			
+
 			result = (endmeilen - anfangsmeilen) / gallonen;
 			System.out.println("Meilen pro Gallone: " + result);
-			
+
 			System.out.println("Anfangsstand Meilen:");
 			anfangsmeilen = scan.nextDouble();
 
@@ -44,8 +44,6 @@ public class MeilenGallone {
 		System.out.println("Vielen Dank!");
 
 		// Anfangskilometerstand eingeben
-
-		
 
 		// Ermitteln, wieviele Meilen gefahren wurden
 

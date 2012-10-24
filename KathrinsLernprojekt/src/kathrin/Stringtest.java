@@ -1,4 +1,5 @@
 package kathrin;
+
 public class Stringtest {
 
 	/**

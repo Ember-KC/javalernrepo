@@ -27,7 +27,7 @@ public class RechteckRechnen {
 			flaeche = 0;
 
 			ersterX = scanNumber("X", "Erster");
-			
+
 			ersterY = scanNumber("Y", "Erster");
 
 			zweiterX = scanNumber("X", "Zweiter");

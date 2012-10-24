@@ -1,4 +1,5 @@
 package kathrin;
+
 import java.util.Scanner;
 
 public class BobsDiscount {
@@ -16,17 +17,16 @@ public class BobsDiscount {
 		double centTotal;
 		double euroTotal;
 
-		
 		Scanner scan = new Scanner(System.in);
-		
+
 		// User nach Anzahl Schrauben fragen
 		System.out.println("Bitte Anzahl der Schrauben eingeben.");
 		anzahlSchrauben = scan.nextInt();
-		
+
 		// User nach Anzahl Muttern fragen
 		System.out.println("Bitte Anzahl der Muttern eingeben.");
 		anzahlMuttern = scan.nextInt();
-		
+
 		// User nach Anzahl Unterlegscheiben fragen
 		System.out.println("Bitte Anzahl der Unterlegscheiben eingeben.");
 		anzahlUnterlegscheiben = scan.nextInt();
@@ -38,7 +38,7 @@ public class BobsDiscount {
 		} else {
 			System.out.println("Bitte prüfen Sie Ihre Bestellung.");
 		}
-		
+
 		// Gesamtbetrag ausgeben
 		centTotal = anzahlMuttern * MUTTERNPREIS + anzahlSchrauben
 				* SCHRAUBENPREIS + anzahlUnterlegscheiben

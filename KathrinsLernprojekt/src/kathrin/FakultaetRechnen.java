@@ -18,11 +18,11 @@ public class FakultaetRechnen {
 		System.out
 				.println("Bitte geben Sie eine Zahl ein, für die sie die Fakultät berechnen lassen wollen.");
 		fakultaet = scan.nextInt();
-		
+
 		if (fakultaet <= 20) {
-			
+
 			while (zaehler <= fakultaet) {
-				ergebnis = ergebnis*zaehler;
+				ergebnis = ergebnis * zaehler;
 				zaehler = zaehler + 1;
 
 			}

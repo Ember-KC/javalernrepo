@@ -17,7 +17,8 @@ public class MikrowellenRechner {
 		System.out.println("Wie ist die Erhitzungszeit pro Posten?");
 		erhitzungszeitPosten = scan.nextInt();
 
-		erhitzungszeit = berechneErhitzungszeit(anzahlPosten, erhitzungszeitPosten);
+		erhitzungszeit = berechneErhitzungszeit(anzahlPosten,
+				erhitzungszeitPosten);
 
 		System.out.println("Die Erhitzungszeit ist " + erhitzungszeit
 				+ " Sekunden.");

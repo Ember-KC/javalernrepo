@@ -15,12 +15,11 @@ public class SchleifenHochzaehlen {
 		zaehler = scan.nextInt();
 		System.out.println("Bitte geben Sie den Endwert ein.");
 		limit = scan.nextInt();
-		
+
 		while (zaehler <= limit) {
 			System.out.println("Der Zähler ist " + zaehler);
 			zaehler = zaehler + 1;
 		}
-		
 
 	}
 }
